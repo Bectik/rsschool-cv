@@ -22,6 +22,50 @@ Telegram: https://t.me/d_onex (@donex)
 
 ## Пример кода
 
+Пример кода из курса **HTML Academy**. 
+
+Какую задачу решал код: Было реализовано поле, где каждая ячейка явлеятся пикселем и пользователь мог в ней рисовать. Выбирая из списка определенный цвет и нажимая на поле он должен был закрашивать выбранную ячейку. Также была реализована кнопка *очистить*, которая должна была очещать все поле.
+
+Сам код для решения этой задачи:
+
+```javascript
+let pixels = document.querySelectorAll('.pixel');
+let chosenColor = document.querySelector('.chosen-color');
+let eraser = document.querySelector('.eraser');
+
+for (let pixel of pixels) {
+pixel.onclick = function () {
+  if (eraser.checked) {
+  pixel.style.backgroundColor = 'white';
+  } else {   
+  let chosenColorValue = chosenColor.value;
+  pixel.style.backgroundColor = chosenColorValue;
+  };
+ };
+};
+```
+
+Другой пример решения задачи из **HTML Academy**. Реализация функционала экранной клавиатуры:
+
+```javascript
+let keys = document.querySelectorAll('.key');
+let display = document.querySelector('.display');
+let clear = document.querySelector('.clear');
+
+for (let key of keys) {
+    display.textContent = display.textContent + key.textContent;
+    console.log(key);
+};
+clear.onclick = function () {
+    dislay.textContent = " ";
+    console.log(clear);
+};
+```
+
+Пример из **Codewars**:
+
+*Добавить пример кода после того как попробую пройти тренировку*
+
 ## Опыт работы
 
 Релевантного опыта нет.

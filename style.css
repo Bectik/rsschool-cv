@@ -1,3 +1,6 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.avatar {
+    border-radius: 30%;
+}
